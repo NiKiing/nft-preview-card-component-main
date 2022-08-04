@@ -1,0 +1,157 @@
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Transparent-cyan: rgb(0,255,247,0.5);
+    --Very-dark-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-medium-blue: hsl(216, 50%, 16%);
+    --Very-dark-blue: hsl(215, 32%, 27%);
+    --Dark-gray: #93a8c5;
+    --White: hsl(0, 0%, 100%);
+
+    --Principal-font: 'Outfit', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--Very-dark-dark-blue);
+}
+
+body main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:700px;
+}
+
+body main .card-container {
+    width: 329px;
+    height: 545px;
+    border-radius: 3%;
+    display: grid;
+    grid-template-rows: 278px auto;
+    justify-items: center;
+    gap: 50px;
+    background-color: var(--Very-dark-medium-blue);
+}
+
+body main .card-container .main-img{
+    width: 277px;
+    margin-top: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+body main .card-container .main-img img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+body main .card-container .main-img .view-img {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 277px;
+    border-radius: 10px;
+
+}
+body main .card-container .main-img .view-img img {
+    width: 50px;
+}
+body main .card-container .main-img:hover .view-img{
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    background-color:var(--Transparent-cyan);
+    
+}
+
+
+body main .info--card{
+    width: 277px;
+    color: var(--White);
+    font-family: var(--Principal-font);
+}
+body main .info--card h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    cursor: pointer;
+}
+
+body main .info--card h1:hover{
+    color: var(--Cyan);
+}
+
+body main .info--card p {
+    font-weight: 300;
+    color: var(--Dark-gray);
+    margin-bottom: 20px;
+}
+body main .info--card .details-card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+}
+body main .info--card .details-card .cyan {
+    color: var(--Cyan);
+
+}
+
+body main .info--card .details-card div{
+  display: flex;
+  justify-content: center;
+
+}
+
+body main .info--card .details-card div img {
+    margin-right: 8px;
+}
+
+body main .info--card .details-card div:nth-child(1) img {
+    height: 18px;
+}
+
+body main .info--card .details-card i:last-child{
+   
+    background-image: url("../images/icon-clock.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body main .info--card .creator--card{
+    display: flex;
+    align-items: center;
+    height: 70px;
+
+    border-top: 1px solid var(--Dark-gray);
+}
+body main .info--card .creator--card img {
+    width: 30px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+body main .info--card .creator--card span  {
+    color: var(--Dark-gray);
+}
+
+body main .info--card .creator--card span > span{
+    color: var(--White);
+}
+
+body main .info--card .creator--card span > span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+
+
+
+
+ 
